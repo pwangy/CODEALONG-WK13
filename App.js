@@ -25,4 +25,3 @@ const styles = StyleSheet.create({
     justifyContent: "space-around"
   }
 });
-// hi sending to github
