@@ -1,27 +1,25 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import styled from 'styled-components/native'
 
-import Header from './components/Header'
-import Counter from './components/Counter'
+import { Houses } from './components/Houses'
 
-export default function App() {  
+const Container = styled.View`
+  flex: 1;
+  background-color: papayawhip;
+  justify-content: center;
+  align-items: center;
+`
+const Title = styled.Text`
+  font-size 24px;
+  color: palevioletred;
+`
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Header title='HERRO, world!'/>
-      <Counter />
-      
-      <Header title='Byieeeeee'/>
-      <StatusBar />
-    </View>
-  );
+    <Container>
+      <Houses />
+    </Container>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "powderblue",
-    alignItems: "center",
-    justifyContent: "space-around"
-  }
-});
+export default App
