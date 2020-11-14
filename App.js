@@ -1,33 +1,7 @@
 import React, { useState} from 'react'
 import styled from 'styled-components/native'
-import { TouchableOpacity, Text } from 'react-native'
 
-const Container = styled.View`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-`
-const TopContainer = styled(Container)`
-width: 100%;
-background-color: #222222;
-`
 
-const TopHeader = styled.Text`
-  font-size: 48px;
-  color: #efefef;
-`
-
-const BottomContainer = styled.View`
-  flex: 3;
-  width: 100%;
-  background-color: #fff; 
-  justify-content: center;
-  align-items: center;
-`
-
-const BottomText = styled.Text`
-  font-size: 32px;
-  color: #1f1f1f;
 `
 
 const App = () => {
